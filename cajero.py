@@ -68,6 +68,7 @@ if usuario == "flf":
                     
             if seleccion == 4: # Salir
                 print("Gracias por su visita")
+                time.sleep(1)
                 bucle = 6
 
 # Usuario janf
@@ -119,5 +120,6 @@ if usuario == "janf":
                 
             if seleccion == 4: # Salir
                 print("Gracias por su visita")
+                time.sleep(1)
                 bucle = 6
 
