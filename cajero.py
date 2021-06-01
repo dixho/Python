@@ -1,6 +1,9 @@
-import time
+import time # Modulo Time para los tiempos de espera
+
+
 usuario=input("Ingrese su usuario: ")
 pin=int(input("Ingrese su PIN: "))
+
 usuarios=["flf","janf"]
 pins =  [5486 , 3457]
 masterpin = 1234
@@ -10,6 +13,7 @@ masterpin = 1234
 monedero3457=254654
 monedero5486=1000
 
+# Variable Bucle
 bucle = 5
 
 if pin != pins or usuario != usuarios:
@@ -116,3 +120,4 @@ if usuario == "janf":
             if seleccion == 4: # Salir
                 print("Gracias por su visita")
                 bucle = 6
+
