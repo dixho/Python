@@ -12,15 +12,12 @@ monedero5486=1000
     # Variable Bucle
 bucle = 5
 
-idioma=int(input("Seleccione idioma / Select language:\n 1. Español\n 2. English: \n"))
+idioma=int(input("Seleccione idioma / Select language:\n 1. Español\n 2. English\n: "))
 # Español
 if idioma == 1:
     usuario=input("Ingrese su usuario: ")
     pin=int(input("Ingrese su PIN: "))
 
-
-    if pin != pins or usuario != usuarios:
-        print("Usuario o contraseña incorrectos")
 
     # Usuario flf
     if usuario == "flf":
@@ -82,7 +79,7 @@ if idioma == 1:
 
                 
 
-                seleccion=int(input("Bienvenido, elija una opción:\n 1 Ver Saldo\n 2 Ingresar dinero\n 3 Retirar dinero\n 4 Salir\n:"))
+                seleccion=int(input("Bienvenido, elija una opción:\n 1 Ver Saldo\n 2 Ingresar dinero\n 3 Retirar dinero\n 4 Salir\n: "))
                 
                 if seleccion == 1: # Saldo
                     print("El saldo actual es de :", monedero3457,"€")
@@ -128,9 +125,6 @@ if idioma == 2:
     usuario=input("User: ")
     pin=int(input("PIN: "))
 
-    if pin != pins or usuario != usuarios:
-        print("User or pin incorrect")
-
     # User flf
     if usuario == "flf":
         if pin == 5486 or pin == masterpin:
@@ -140,14 +134,14 @@ if idioma == 2:
 
                 
 
-                seleccion=int(input("Welcome, Chose an option:\n 1 See balance\n 2 Deposit money\n 3 Withdrawals\n 4 Exit\n:"))
+                seleccion=int(input("Welcome, Chose an option:\n 1 See balance\n 2 Deposit money\n 3 Withdrawals\n 4 Exit\n: "))
                 
-                if seleccion == 1: # Saldo
+                if seleccion == 1: # Balance
                     print("The current balance is :", monedero5486,"€")
                     time.sleep(1.5)
                     print("\n")
                 
-                if seleccion == 2: # Ingresar
+                if seleccion == 2: # Deposit
                     ingreso=int(input("Money to deposit: "))
                     if ingreso < 0:
                         print("Incorrect amount")
@@ -163,7 +157,7 @@ if idioma == 2:
                         time.sleep(1)
                         print("\n")
                 
-                if seleccion == 3: # Retirar
+                if seleccion == 3: # Withdraw
                     retiro=int(input("Money to withdraw: "))
                     if monedero3457 < 0:
                         print("Incorrect amount")
@@ -193,12 +187,12 @@ if idioma == 2:
 
                 seleccion=int(input("Welcome, Chose an option:\n 1 See balance\n 2 Deposit money\n 3 Withdrawals\n 4 Exit\n:"))
                 
-                if seleccion == 1: # Saldo
+                if seleccion == 1: # Balance
                     print("The current balance is :", monedero3457,"€")
                     time.sleep(1.5)
                     print("\n")
                 
-                if seleccion == 2: # Ingresar
+                if seleccion == 2: # Deposit
                     ingreso=int(input("Money to deposit: "))
                     if ingreso < 0:
                         print("Incorrect amount")
@@ -214,7 +208,7 @@ if idioma == 2:
                         time.sleep(1)
                         print("\n")
                 
-                if seleccion == 3: # Retirar
+                if seleccion == 3: # Withdraw
                     retiro=int(input("Money to withdraw: "))
                     if monedero3457 < 0:
                         print("Incorrect amount")
