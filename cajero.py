@@ -1,7 +1,7 @@
 import time # Modulo Time para los tiempos de espera
 
 usuarios=["flf","janf", "test"]
-pins =  [5486 , 3457]
+pins =  [5486 , 3457, 0000]
 masterpin = 1234
 
     # Monederos
