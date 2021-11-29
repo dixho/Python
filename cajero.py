@@ -11,7 +11,7 @@ monedero5486=1000
 monederotest= 1000000
 
     # Variable Bucle
-bucle = 5
+bucle = True
 
 idioma=int(input("Seleccione idioma / Select language:\n 1. Español\n 2. English\n: "))
 # Español
@@ -25,7 +25,7 @@ if idioma == 1:
         if pin == 5486 or pin == masterpin:
             if pin == masterpin:
                 print("Usuario Maestro")
-            while bucle == 5:
+            while bucle:
 
                 
 
@@ -70,7 +70,7 @@ if idioma == 1:
                 if seleccion == 4: # Salir
                     print("\n Gracias por su visita")
                     time.sleep(1)
-                    bucle = 6
+                    bucle = False
 
     # Usuario janf
     if usuario == "janf":
